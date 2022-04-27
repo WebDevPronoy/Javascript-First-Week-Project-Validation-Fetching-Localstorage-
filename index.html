@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>JavaScript First Week</title>
   </head>
 
@@ -16,43 +16,112 @@
 <div class="mx-auto" style="width: 600px;">
 
 
-    <h1 class=" my-5 bg-primary">Javscript First Week Project</h1>
+    <h1 class=" my-5">Add Item :</h1>
 
 
-    <form name="form">
+    <form name="form" class="form">
 
-        <div class="form-group">
-            <label for="description">Description</label>
-            <textarea class="form-control" id="description" rows="3"></textarea>
-          </div>
+       
+       
+          <input type= "text" name="description" id="description" placeholder="add decription..." style="width: 600px;""></textarea>
+      
 
-
-          <div class="form-group">
-            <label for="security">Security</label>
-            <select class="form-control" id="security">
-              <option>High</option>
-              <option>Medium</option>
+          <br> <br>
+          
+            <select class="form-control" id="security" name="security">
               <option>Low</option>
+              <option>Medium</option>
+              <option>High</option>
             </select>
-          </div>
+         
 
+            <br> <br>
+       
+        <input type="text" id="assign" name="assign" placeholder="Assign Task to ..." style="width: 600px;"">
+     
 
-        <div class="form-group">
-          <label for="assign">AssignTo</label>
-          <input type="text" class="form-control" id="assign" placeholder="Task Assign To">
-        </div>
-
-
+        <br> <br>
 
         <button type="submit"  class="btn btn-primary " style="width: 600px;">Submit</button>
 
 
       </form>
 
+<br>
+<br> <br>
+      <div> 
+        <h3> Fetch from event</h3>
+
+        <p></p>issue id: Random<br> <br>
+
+        <button type="button"  class="btn btn-primary " style="width: 200px;">Open</button>
+        <br> <br>
+
+          <!-- description -->
+          <h3 class="testdescription"></h3>
+
+      
+          <!-- security -->
+          <p class="testsecurity"> <i class="fa fa-clock-o"></i> </p>
+            
+          <br>
+          
+          
+          <!-- user -->
+           <p class="testassign"><i class="fa fa-user"></i> </p>
+
+
+   
+
+        <button type="button"  class="btn btn-danger " style="width: 200px;">Close</button>
+        <button type="button"  class="btn btn-danger " style="width: 200px;">Delete</button>
+        
+
+
+      
+
+
+      </div>
+
+
+<br> <br>
+      <div>
+        <h3>Fetch From storage</h3>
+        <p></p>issue id: Random2<br> <br>
+
+        <button type="button"  class="btn btn-primary " style="width: 200px;">Open</button>
+        <br> <br>
+
+          <!-- description -->
+          <h3 class="ldescription">Description:</h3>
+
+      
+          <!-- security -->
+          <p class="lsecurity"> <i class="fa fa-clock-o"></i> </p>
+            
+          <br>
+          
+          
+          <!-- user -->
+           <p class="lassign"><i class="fa fa-user"></i> </p>
+
+
+   
+
+        <button type="button"  id ="close"class="btn btn-danger " style="width: 200px;">Close</button>
+        <button type="button"  id="delete" class="btn btn-danger " style="width: 200px;">Delete</button>
+        
+
+
+      
+
+
+      </div>
+
 
 </div>
 
-<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
 <script src="index.js"></script>
 
 
